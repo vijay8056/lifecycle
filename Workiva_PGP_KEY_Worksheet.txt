@@ -1,0 +1,68 @@
+C:\Users\laksh\Desktop\work>gpg --full-generate-key
+gpg (GnuPG) 2.4.3; Copyright (C) 2023 g10 Code GmbH
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Please select what kind of key you want:
+   (1) RSA and RSA
+   (2) DSA and Elgamal
+   (3) DSA (sign only)
+   (4) RSA (sign only)
+   (9) ECC (sign and encrypt) *default*
+  (10) ECC (sign only)
+  (14) Existing key from card
+Your selection? 1
+RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want? (3072) 4096
+Requested keysize is 4096 bits
+Please specify how long the key should be valid.
+         0 = key does not expire
+      <n>  = key expires in n days
+      <n>w = key expires in n weeks
+      <n>m = key expires in n months
+      <n>y = key expires in n years
+Key is valid for? (0) 4y
+Key expires at 2/4/2028 12:03:22 AM US Mountain Standard Time
+Is this correct? (y/N) y
+
+GnuPG needs to construct a user ID to identify your key.
+
+Real name: ofiwdesk
+Email address: svc.ofiwdesk.e3@aexp.com
+Comment:
+You selected this USER-ID:
+    "ofiwdesk <svc.ofiwdesk.e3@aexp.com>"
+
+Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? O
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: revocation certificate stored as 'C:\\Users\\laksh\\AppData\\Roaming\\gnupg\\openpgp-revocs.d\\6145A1087444025F42B9C9AE03D51AD5804069ED.rev'
+public and secret key created and signed.
+
+pub   rsa4096 2024-02-05 [SC] [expires: 2028-02-04]
+      6145A1087444025F42B9C9AE03D51AD5804069ED
+uid                      ofiwdesk <svc.ofiwdesk.e3@aexp.com>
+sub   rsa4096 2024-02-05 [E] [expires: 2028-02-04]
+
+
+C:\Users\laksh\Desktop\work>gpg --export -a 6145A1087444025F42B9C9AE03D51AD5804069ED > publickey120240204.key
+C:\Users\laksh\Desktop\work>gpg --export-secret-key -a 6145A1087444025F42B9C9AE03D51AD5804069ED > privatekey120240204.key
+
+
+
+
+
+
+C:\Users\laksh\Desktop\work>gpg --export -a 6DD3E648707A736D0CF05AA083CA88D1CD6EAA48 > publickey20240204.key
+
+C:\Users\laksh\Desktop\work>gpg --export-secret-key -a 6DD3E648707A736D0CF05AA083CA88D1CD6EAA48 > privatekey20240204.key
+
+C:\Users\laksh\Desktop\work>gpg --export -a 6DD3E648707A736D0CF05AA083CA88D1CD6EAA48 > publickey20240204NEW.key
+
+C:\Users\laksh\Desktop\work>
